@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UnitConverter.Models\UnitConverter.Models.csproj" />
-    <ProjectReference Include="..\UnitConverter.WebAPI\UnitConverter.WebAPI.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="UnitConverter.Models">
       <HintPath>..\UnitConverter.Models\bin\Debug\net6.0\UnitConverter.Models.dll</HintPath>
     </Reference>

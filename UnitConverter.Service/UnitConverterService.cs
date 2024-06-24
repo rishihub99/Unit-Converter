@@ -1,5 +1,5 @@
 ﻿using UnitConverter.Models;
-using UnitConverter.WebAPI;
+//using UnitConverter.WebAPI;
 
 namespace UnitConverter.Service
 {
@@ -19,9 +19,9 @@ namespace UnitConverter.Service
         {
             //Console.WriteLine(UnitTypeLength from, UnitTypeLength to);
 
-            var x=Units.
-            double fromFactor = //[(int)from];
-            double toFactor = _units.lenVal[(int)to];
+            var x=Units.lenVal();
+            double fromFactor =x[(int)from];
+            double toFactor = x[(int)to];
             return value * (fromFactor / toFactor);
 
             throw new ArgumentException("Invalid unit type.");
@@ -29,8 +29,9 @@ namespace UnitConverter.Service
 
         public double massConvert(UnitTypeMass from, UnitTypeMass to, double value)
         {
-            double fromFactor = _units.massVal[(int)from];
-            double toFactor = _units.massVal[(int)to];
+            var y = Units.massVal();
+            double fromFactor = y[(int)from];
+            double toFactor = y[(int)to];
             return value * (fromFactor / toFactor);
 
             throw new ArgumentException("Invalid unit type.");
@@ -38,8 +39,9 @@ namespace UnitConverter.Service
 
         public double timeConvert(UnitTypeTime from, UnitTypeTime to, double value)
         {
-            double fromFactor = _units.timeVal[(int)from];
-            double toFactor = _units.timeVal[(int)to];
+            var z = Units.timeVal();
+            double fromFactor = z[(int)from];
+            double toFactor = z[(int)to];
             return value * (fromFactor / toFactor);
 
             throw new ArgumentException("Invalid unit type.");

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitConverter.Models", "Uni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitConverter.Service", "UnitConverter.Service\UnitConverter.Service.csproj", "{EB26079E-3EAD-4AF1-90C0-0612FC24F54F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{75F0C2D5-473E-4967-8ABF-5F4601A64FD4} = {75F0C2D5-473E-4967-8ABF-5F4601A64FD4}
+		{9DDAC2C0-DEA1-409D-A0B2-1F6017D0D4E3} = {9DDAC2C0-DEA1-409D-A0B2-1F6017D0D4E3}
 	EndProjectSection
 EndProject
 Global
