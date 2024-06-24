@@ -8,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 //builder.Services.AddSingleton<Units>();
 
-///builder.Services.AddTransient<UnitConverterService>();
+builder.Services.AddScoped<IUnitConverterService, TimeUnitConverterService>();
+builder.Services.AddScoped<IUnitConverterService, MassUnitConverterService>();
+builder.Services.AddScoped<IUnitConverterService, LengthUnitConverterService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 

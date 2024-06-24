@@ -3,7 +3,7 @@
 
 namespace UnitConverter.Service
 {
-    public class UnitConverterService
+    public class UnitConverterService 
     {
 
 
@@ -15,37 +15,11 @@ namespace UnitConverter.Service
         //}
 
 
-        public double lengthConvert(UnitTypeLength from, UnitTypeLength to, double value)
-        {
-            //Console.WriteLine(UnitTypeLength from, UnitTypeLength to);
+        
 
-            var x=Units.lenVal();
-            double fromFactor =x[(int)from];
-            double toFactor = x[(int)to];
-            return value * (fromFactor / toFactor);
+        
 
-            throw new ArgumentException("Invalid unit type.");
-        }
-
-        public double massConvert(UnitTypeMass from, UnitTypeMass to, double value)
-        {
-            var y = Units.massVal();
-            double fromFactor = y[(int)from];
-            double toFactor = y[(int)to];
-            return value * (fromFactor / toFactor);
-
-            throw new ArgumentException("Invalid unit type.");
-        }
-
-        public double timeConvert(UnitTypeTime from, UnitTypeTime to, double value)
-        {
-            var z = Units.timeVal();
-            double fromFactor = z[(int)from];
-            double toFactor = z[(int)to];
-            return value * (fromFactor / toFactor);
-
-            throw new ArgumentException("Invalid unit type.");
-        }
+        
         //private readonly Dictionary<UnitTypeLength, double>? _LengthConversionFactor;
         //private readonly Dictionary<UnitTypeMass, double>? _MassConversionFactor;
         //private readonly Dictionary<UnitTypeTime, double>? _TimeConversionFactor;
