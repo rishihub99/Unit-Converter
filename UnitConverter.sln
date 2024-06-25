@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitConverter.WebAPI", "UnitConverter.WebAPI\UnitConverter.WebAPI.csproj", "{75F0C2D5-473E-4967-8ABF-5F4601A64FD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DDAC2C0-DEA1-409D-A0B2-1F6017D0D4E3} = {9DDAC2C0-DEA1-409D-A0B2-1F6017D0D4E3}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitConverter.Models", "UnitConverter.Models\UnitConverter.Models.csproj", "{9DDAC2C0-DEA1-409D-A0B2-1F6017D0D4E3}"
 EndProject

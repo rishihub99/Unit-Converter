@@ -17,12 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="UnitConverter.Models">
-      <HintPath>..\UnitConverter.Service\bin\Debug\net6.0\UnitConverter.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="UnitConverter.Service">
-      <HintPath>..\UnitConverter.Service\bin\Debug\net6.0\UnitConverter.Service.dll</HintPath>
-    </Reference>
+	  <ProjectReference Include="..\UnitConverter.Models\UnitConverter.Models.csproj" />
+	  <ProjectReference Include="..\UnitConverter.Service\UnitConverter.Service.csproj" />
   </ItemGroup>
 
 </Project>

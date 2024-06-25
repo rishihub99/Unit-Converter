@@ -5,7 +5,7 @@ using System;
 
 namespace UnitConverter.xUnitCase
 {
-    public class LengthTest:IDisposable
+    public class LengthTest
     {
         private LengthUnitConverterService _lengthUnitConverterService { get; set; } = null;
 
@@ -14,10 +14,7 @@ namespace UnitConverter.xUnitCase
             _lengthUnitConverterService = new LengthUnitConverterService();
             
         }
-        public void Dispose()
-        {
-
-        }
+        
         [Fact]
         public void LengthUnitConverterService_EqualTest()
         {
@@ -47,17 +44,13 @@ namespace UnitConverter.xUnitCase
 
 
 
-    public class MassTest : IDisposable
+    public class MassTest 
     {
         private MassUnitConverterService _massUnitConverterService { get; set; } = null;
 
         public MassTest()
         {
             _massUnitConverterService = new MassUnitConverterService();
-
-        }
-        public void Dispose()
-        {
 
         }
         [Fact]
@@ -88,7 +81,7 @@ namespace UnitConverter.xUnitCase
     }
 
 
-    public class TimeTest : IDisposable
+    public class TimeTest 
     {
         private TimeUnitConverterService _timeUnitConverterService { get; set; } = null;
 
@@ -97,10 +90,7 @@ namespace UnitConverter.xUnitCase
             _timeUnitConverterService = new TimeUnitConverterService();
 
         }
-        public void Dispose()
-        {
-
-        }
+        
         [Fact]
         public void TimeUnitConverterService_EqualTest()
         {
